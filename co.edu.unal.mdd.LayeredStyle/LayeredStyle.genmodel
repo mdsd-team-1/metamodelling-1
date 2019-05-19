@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/co.edu.unal.mdd.LayeredStyle/src" modelPluginID="co.edu.unal.mdd.LayeredStyle"
+    modelName="LayeredStyle" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>LayeredStyle.ecore</foreignModel>
+  <genPackages prefix="LayeredStyle" disposableProviderFactory="true" ecorePackage="LayeredStyle.ecore#/">
+    <genClasses ecoreClass="LayeredStyle.ecore#//LayeredStyle">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LayeredStyle.ecore#//LayeredStyle/relations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LayeredStyle.ecore#//LayeredStyle/layers"/>
+    </genClasses>
+    <genClasses ecoreClass="LayeredStyle.ecore#//Layer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference LayeredStyle.ecore#//Layer/layerSegments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LayeredStyle.ecore#//Layer/name"/>
+    </genClasses>
+    <genClasses ecoreClass="LayeredStyle.ecore#//Relation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LayeredStyle.ecore#//Relation/sourceLayer"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference LayeredStyle.ecore#//Relation/targetLayer"/>
+    </genClasses>
+    <genClasses ecoreClass="LayeredStyle.ecore#//LayerSegment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute LayeredStyle.ecore#//LayerSegment/name"/>
+    </genClasses>
+    <genClasses ecoreClass="LayeredStyle.ecore#//AllowedToUse"/>
+    <genClasses ecoreClass="LayeredStyle.ecore#//AllowedToUseBelow"/>
+  </genPackages>
+</genmodel:GenModel>
